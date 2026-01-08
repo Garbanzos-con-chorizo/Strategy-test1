@@ -1,0 +1,18 @@
+{
+  "entrypoint": "MyMomentumStrategy",
+  "version": "1.0.0",
+  "description": "A robust momentum strategy using RSI and MACD (Test Implementation).",
+  "author": "Antigravity",
+  "telemetry_schema": {
+    "fields": ["rsi", "macd", "signal_strength"],
+    "graphs": [
+      { "name": "Momentum Indicators", "fields": ["rsi", "macd"] }
+    ]
+  },
+  "default_params": {
+    "period": 14,
+    "rsi_period": 14,
+    "macd_fast": 12,
+    "macd_slow": 26
+  }
+}
